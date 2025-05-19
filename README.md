@@ -1,22 +1,24 @@
 # homebrew-tap
 Homebrew Tap for Zasper
 
+### Install [zasper](https://github.com/zasper-io/zasper) using `homebrew`
 
 ```bash
-brew tap zasper/tap
+brew install zasper-io/tap/zasper
 ```
 
-Install [zasper](https://github.com/zasper-io/zasper) using `homebrew`
+### Upgrade `zasper`
 
 ```bash
-brew install zasper/tap/zasper
+brew update && brew upgrade zasper-io/tap/zasper
 ```
 
-Upgrade `zasper`
+### Adding the Tap
 
 ```bash
-brew update && brew upgrade zasper/tap/zasper
+brew tap zasper-io/tap
 ```
+
 
 ## Reference
 
