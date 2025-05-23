@@ -10,7 +10,7 @@ class Zasper < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/zasper-io/zasper/releases/download/v0.1.0-alpha/zasper-webapp-darwin-amd64.tar.gz"
-      sha256 "9f0c91592115f9d069337ba27e99507981c767eddc129b733f6c51d5d4cf9a34"
+      sha256 "6653b382d661bbc0abb753491f1ccaf8b0430d764d59d3ba278d45f5cae00e8c"
 
       def install
         bin.install "zasper"
@@ -18,7 +18,7 @@ class Zasper < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/zasper-io/zasper/releases/download/v0.1.0-alpha/zasper-webapp-darwin-arm64.tar.gz"
-      sha256 "d6ab8b02c9bba20dfb00cb1a69729f135d0ed3376a1100435d22b3d2ac289aa8"
+      sha256 "4664c106c8ef4b17e9c3dcbf4d838998403d5a3f3e8730007198b8f082ca26af"
 
       def install
         bin.install "zasper"
@@ -30,7 +30,7 @@ class Zasper < Formula
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/zasper-io/zasper/releases/download/v0.1.0-alpha/zasper-webapp-linux-amd64.tar.gz"
-        sha256 "213d7d2ad41b0744efdaafafcd2f432fd527ccaff902e41302b86db6698aa6bd"
+        sha256 "4ac402d058176a002b8e78217206a38557ba14b3c12b78c105763a9f12c0e18b"
 
         def install
           bin.install "zasper"
@@ -40,7 +40,7 @@ class Zasper < Formula
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/zasper-io/zasper/releases/download/v0.1.0-alpha/zasper-webapp-linux-arm64.tar.gz"
-        sha256 "d2157aee770b8536dbdfc88d367cebee9b8f5fb7b4648165e61eae3556ea09f0"
+        sha256 "fd67969d1e4881fe8805ec3168befdcac2f623dcb558a245c915a18871591697"
 
         def install
           bin.install "zasper"
