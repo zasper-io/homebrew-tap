@@ -4,21 +4,21 @@
 class Zasper < Formula
   desc "Zasper is a High Performance IDE for Jupyter Notebooks"
   homepage "https://zasper.io"
-  version "0.1.0-alpha"
+  version "0.2.0-beta"
   license "AGPL-3.0-only"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/zasper-io/zasper/releases/download/v0.1.0-alpha/zasper-webapp-darwin-amd64.tar.gz"
-      sha256 "6653b382d661bbc0abb753491f1ccaf8b0430d764d59d3ba278d45f5cae00e8c"
+      url "https://github.com/zasper-io/zasper/releases/download/v#{version}/zasper-webapp-darwin-amd64.tar.gz"
+      sha256 "7235bc44f4cea5229324b92fb2c9f7019a3646cfc5c31c5c77b5e0a92bd6dd9a"
 
       def install
         bin.install "zasper"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/zasper-io/zasper/releases/download/v0.1.0-alpha/zasper-webapp-darwin-arm64.tar.gz"
-      sha256 "4664c106c8ef4b17e9c3dcbf4d838998403d5a3f3e8730007198b8f082ca26af"
+      url "https://github.com/zasper-io/zasper/releases/download/v#{version}/zasper-webapp-darwin-arm64.tar.gz"
+      sha256 "0c5341db703e84106f4798de028104ec932ee0932c0f2cd3527d7a80f50e92f6"
 
       def install
         bin.install "zasper"
@@ -29,8 +29,8 @@ class Zasper < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/zasper-io/zasper/releases/download/v0.1.0-alpha/zasper-webapp-linux-amd64.tar.gz"
-        sha256 "4ac402d058176a002b8e78217206a38557ba14b3c12b78c105763a9f12c0e18b"
+        url "https://github.com/zasper-io/zasper/releases/download/v#{version}/zasper-webapp-linux-amd64.tar.gz"
+        sha256 "eec5bfb8667d9ec3a28581b2b38fe3c99256c9531da84fbc12ddbca27e47c481"
 
         def install
           bin.install "zasper"
@@ -39,8 +39,8 @@ class Zasper < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/zasper-io/zasper/releases/download/v0.1.0-alpha/zasper-webapp-linux-arm64.tar.gz"
-        sha256 "fd67969d1e4881fe8805ec3168befdcac2f623dcb558a245c915a18871591697"
+        url "https://github.com/zasper-io/zasper/releases/download/v#{version}/zasper-webapp-linux-arm64.tar.gz"
+        sha256 "4710be7d32a7d29e3db0d3dcec0a0207a501366adc68bd3445c96ce5e6b630d8"
 
         def install
           bin.install "zasper"
