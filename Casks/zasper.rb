@@ -4,21 +4,21 @@ cask "zasper" do
 
   on_macos do
     on_arm do
-      sha256 "2aa33dcfdc056875636c6011cf0c3f3f5e936d04481ecf847dfa2e1fe2b43a7a"
+      sha256 "0ffe7b730e9f94426c875c9a677a2ec4bd4ff5af0cd37c00259757463c1a8fd6"
       url "https://github.com/zasper-io/zasper/releases/download/v#{version}/zasper-webapp-#{version}-darwin-arm64.tar.gz"
     end
     on_intel do
-      sha256 "6e759084304d82565069743d6b9e943adeea7e05d903b2b6514b881de54cb255"
+      sha256 "881f8d3eb41786e12a58ea44078d3f0ac4b34a0511fd91784ecc0c5b2971a7ef"
       url "https://github.com/zasper-io/zasper/releases/download/v#{version}/zasper-webapp-#{version}-darwin-amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "3d26832b20c9920ae21874af8e46b91d1465eb893cc12fc5bb01011e605e79b5"
+      sha256 "42b7c725bb83c69abf82427e46d73f7992bdf2f03e83af0ffaa18bbd76452000"
       url "https://github.com/zasper-io/zasper/releases/download/v#{version}/zasper-webapp-#{version}-linux-arm64.tar.gz"
     end
     on_intel do
-      sha256 "d40cc56b79271d24f68b02ddbd656f976bd2ae2d3f12a92e8b90a72849c5b60e"
+      sha256 "55fd3c962bd4872c3341226f4bbe6e1ff7020f0604990902f6b13d8f2c57e67e"
       url "https://github.com/zasper-io/zasper/releases/download/v#{version}/zasper-webapp-#{version}-linux-amd64.tar.gz"
     end
   end
